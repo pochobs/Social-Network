@@ -1,43 +1,47 @@
-const { Schema, model, Types } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
-const UserSchema = new Schema({
-    username: {
-        type: String,
-        trim: true,
-        unique: true,
-        required: 'Username is Required'
+const UserSchema = new Schema(
+	{
+		username : {
+			type     : String,
+			required : true,
+			unique   : true,
+			trim     : true
+		},
+		email    : {
+			type     : String,
+			required : true,
+			unique   : true,
+			match    : [
+				/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,
+				'Please fill a valid email address'
+			]
     },
-
-    email: {
-        type: String,
-        unique: true,
-        required: 'Email is Required',
-        match: [/.+@.+\..+/]
-    },
-
-    thoughts: [
-        {
-        type: Schema.Types.ObjectId,
-        ref: 'Thought'
-        }
-    ],
-
-    friends: [
-        {
-        type: Schema.Types.ObjectId,
-        ref: 'User'
-        }
-    ]
-},
-{
-    toJSON: {
-      virtuals: true
-    },
-    id: false
-});
+    // association with Thought model.  Field will be an id coming from the Thought
+		thoughts : [
+			{
+				type : Schema.Types.ObjectId,
+				ref  : 'Thought'
+			}
+		],
+		friends  : [
+			{
+				type : Schema.Types.ObjectId,
+				ref  : 'User'
+			}
+		]
+	},
+	{
+		toJSON : {
+			virtuals : true
+		},
+		id     : false
+	}
+);
 
 UserSchema.virtual('friendCount').get(function() {
-    return this.friends.length;
+	// return length of friends array
+	return this.friends.length;
 });
 
 const User = model('User', UserSchema);
