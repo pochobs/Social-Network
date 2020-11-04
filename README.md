@@ -19,9 +19,7 @@
   
   ## Usage
  ![this is a screenshot of my website](./screenshot.png)
- * users tutorial video: https://drive.google.com/file/d/1G8jTHtrLWcXvnTDmYr5XjFaaar-2OmgH/view
- * how to add/delete friends tutorial: https://drive.google.com/file/d/1fEHJGNDEFRghME_2Ir7ddGinKuDWmktr/view
- * creating new thoughts, finding all thoughts, finding thoughts by ID tutorial: https://drive.google.com/file/d/1gXdX2L-GJtLLMiTYBFGlcAeNdVgukgEM/view
+ 
  
 
 
@@ -35,3 +33,8 @@
   ## **Questions**
   * Visit me at [gitHub](http://www.github.com/pochobs)
   * For additional questions, please reach me at: [pochobs@gmail.com](mailto:pochobs@gmail.com)
+
+This is the preview of the initial page:
+<img src="./all-user-ss.png">
+
+  <iframe src="https://drive.google.com/file/d/1TW4yEoyeoKr2Fnep-O5i5fTVyhI0NwkZ/preview" width="640" height="480"></iframe>
