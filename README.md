@@ -34,7 +34,9 @@
   * Visit me at [gitHub](http://www.github.com/pochobs)
   * For additional questions, please reach me at: [pochobs@gmail.com](mailto:pochobs@gmail.com)
 
-This is the preview of the initial page:
+This is the preview of the insomnia functionality:
 <img src="./all-user-ss.png">
+
+[Link to video](https://drive.google.com/file/d/1TW4yEoyeoKr2Fnep-O5i5fTVyhI0NwkZ/view)
 
   <iframe src="https://drive.google.com/file/d/1TW4yEoyeoKr2Fnep-O5i5fTVyhI0NwkZ/preview" width="640" height="480"></iframe>
