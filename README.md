@@ -38,5 +38,3 @@ This is the preview of the insomnia functionality:
 <img src="./all-user-ss.png">
 
 [Link to video](https://drive.google.com/file/d/1TW4yEoyeoKr2Fnep-O5i5fTVyhI0NwkZ/view)
-
-  <iframe src="https://drive.google.com/file/d/1TW4yEoyeoKr2Fnep-O5i5fTVyhI0NwkZ/preview" width="640" height="480"></iframe>
